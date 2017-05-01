@@ -11,7 +11,7 @@ public class FishingSession {
         fishingSession.setSession("active");
         int piecesOfBait = 5;
 
-        piecesOfBait = 4; // Fox steals the bait!
+        piecesOfBait = 0; // Fox steals the bait!
 
         while (piecesOfBait != 0 ) {
             castForFish();
@@ -24,6 +24,7 @@ public class FishingSession {
                 System.out.println(piecesOfBait);
             }
         }
+        System.out.println("Skipped the casting because the Fox stole the bait");
     }
 
     private static void castForFish() {
